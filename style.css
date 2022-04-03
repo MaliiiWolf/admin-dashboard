@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
 }
 
 .wrapper {
@@ -12,6 +13,8 @@ body {
 	height: 100vh;
 	/* grid-template-columns: repeat(4, 1fr); */
 }
+
+/* Header Content */
 
 header {
 	display: grid;
@@ -35,7 +38,7 @@ header {
 
 .left input {
 	width: 100%;
-	height: 4.5vh;
+	height: 35px;
 	border-radius: 100px;
 }
 
@@ -80,6 +83,35 @@ button:hover {
 	background-color: rgba(155, 240, 252, 0.568);
 	cursor: pointer;
 }
+
+/* Main Content */
+
+main {
+	display: grid;
+	grid-column: 2 / span 2;
+	margin-left: 1rem;
+	width: 80%;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cards {
+	margin-top: 3rem;
+	gap: 2rem;
+}
+
+.card {
+	width: 600px;
+	height: 200px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 15px;
+	padding: 15px;
+}
+
+/* Sidebar Content */
 
 aside {
 	display: flex;
